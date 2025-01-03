@@ -59,3 +59,35 @@
         console.log("Odd Number");
     }
 }
+
+{
+    //taking input from user
+    let fullName = prompt("Hello!");
+    console.log(fullName);
+}
+
+{
+    let num = prompt("Enter a number: ");
+    if (num % 2 == 0){
+        console.log(num, "is multiple of 2");
+    } else {
+        console.log(num, "is not multiple of 2");
+    }
+}
+
+{
+    //student grading problem
+    let score = prompt("Enter Your Score: ");
+    if ( score >= 80 && score <= 100) {
+        console.log("Grade A");
+    } else if ( score >= 70 && score <= 79) {
+        console.log("Grade B");
+    } else if ( score >= 60 && score <= 69) {
+        console.log("Grade C");
+    } else if ( score >= 50 && score <= 59) {
+        console.log("Grade D");
+    } else {
+        console.log("Grade F");
+    }
+}
+
