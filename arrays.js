@@ -120,3 +120,51 @@
     }
     console.log('after offer price: ',itemsPrice);
 }
+
+{
+    //array methods
+    let fruits = ['apple','mango', 'orange', 'banana'];
+    console.log(fruits);
+    fruits.push('greaps'); //push method
+    console.log(fruits);
+
+    fruits.pop();
+    console.log(fruits); //pop method
+
+    let marks = [12,34,56,78,90];
+    console.log(marks);
+    console.log(marks.toString()); //toString method
+
+    fruits.unshift('pineapple');
+    console.log(fruits); //unshift method
+
+    fruits.shift();
+    console.log(fruits); //shift method
+
+    console.log(fruits.slice(1,3)); // slice method
+
+    console.log(marks.splice(2,1,122));
+    console.log(marks); //splice method
+
+    let cond1 = fruits.concat(marks);
+    console.log(cond1); //concat method
+
+}
+
+{
+    /*Practice Q3: Create an array to store companies -> “Bloomberg”, “Microsoft”, “Uber”, “Google”, “IBM”, “Netflix” */
+    let companiesName = ['Bloomberg', 'Microsoft', 'Uber', 'Google', 'IBM', 'Netflix'];
+    console.log(companiesName);
+
+    //a) remove the first company name from the array.
+    console.log(companiesName.shift());
+    console.log(companiesName);
+
+    //b) remove uber and add ola in its place.
+    console.log(companiesName.splice(1,1,'Ola'));
+    console.log(companiesName);
+
+    //c) add amazon at the end.
+    companiesName.push('Amazon');
+    console.log(companiesName);
+}
