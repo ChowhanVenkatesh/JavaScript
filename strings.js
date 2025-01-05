@@ -54,3 +54,66 @@
     let newFullName = fullName.toUpperCase();
     console.log(newFullName);
 }
+
+{
+    // string lowercase
+    let fullName = 'fullStackDevelopment';
+    console.log(fullName);
+    console.log(fullName.toLowerCase());
+}
+
+{
+    //string trim case
+    let fullName = '    venkateshChowhan  ';
+    console.log(fullName);
+    console.log(fullName.trim());
+}
+
+{
+    //string slice
+    let fullName = 'venkateshChowhan';
+    console.log(fullName);
+    console.log(fullName.slice(0,9));
+    console.log(fullName.slice(9));
+}
+
+{
+    //string concatination
+    let firstName = 'Chowhan ';
+    let lastName = 'Venkatesh ';
+    console.log(firstName);
+    console.log(lastName);
+    let cond1 = firstName + lastName;
+    console.log(cond1);
+    console.log(firstName.concat(lastName));
+    console.log(cond1.length);
+    console.log(typeof cond1);
+    console.log(cond1[5]);
+}
+
+{
+    //string replace
+    let fullName = 'VenkateshChowhan';
+    console.log(fullName);
+    console.log(fullName.replace('t','tt'));
+
+    let myName = 'Yolololololoem';
+    console.log(myName);
+    console.log(myName.replace('lo','bn'));
+    console.log(myName.replaceAll('lo','bn'));
+}
+
+{
+    //string charAt
+    let fullName = 'fullStackDevelopment';
+    console.log(fullName);
+    console.log(fullName.charAt(3));
+}
+
+/* Practice Question 1: Prompt the user to enter their full name. Generate a username for them based on the input.
+Start username with @, followed by their full name and ending with the fullname length */
+{
+    let fullName = prompt('Enter Your Full Name: ');
+    let userName = '@' + fullName + fullName.length;
+    console.log(userName);
+}
