@@ -135,3 +135,70 @@
     }
     myArray2.forEach(calSquare);
 }
+
+{
+    //map method in array
+    let numArray = [23,56,12,34,11,13];
+    console.log(numArray);
+    let newNumArray = numArray.map((value) =>{ //numerical array example
+        return value - 2;
+    });
+    console.log(newNumArray);
+
+    let wordArray = ['venky', 'venkat', 'venkatesh'];
+    console.log(wordArray);
+    let newWordArray = wordArray.map((value) => { //verbal array example
+        return value.toUpperCase();
+    });
+    console.log(newWordArray);
+}
+
+{
+    //filter method in array
+    let arr = [23,12,45,44,22,32,11,12,56];
+    console.log(arr);
+    let evenArr = arr.filter((val) => {
+        return val % 2 == 0;
+    });
+    console.log(evenArr);
+}
+
+{
+    //reduce method in array
+    let arr = [1,2,3,4,5,6,7,8];
+    console.log(arr);
+    const output = arr.reduce((result, current) => {
+        return result + current;
+    });
+    console.log(output);
+}
+
+{
+    //Practice Q1: We are given array of marks of students. Filter our of the marks of students that scored 90+.
+    let marks = [67,89,98,92,91,77,56,64,90,96];
+    console.log(marks);
+    let toppers = marks.filter((val) =>{
+        return val > 90;
+    });
+    console.log(toppers);
+
+    //Practice Q2: Take a number n as input from user. Create an array of numbers from 1 to n.
+    let n = prompt("Enter Your Number: ");
+    let arr=[];
+    for (let i=1; i<=n; i++){
+        arr[i-1]=i;
+    }
+    console.log(arr);
+
+    //Use the reduce method to calculate sum of all numbers in the array.
+    let sum = arr.reduce((res, cur) => {
+        return res + cur;
+    });
+    console.log(sum);
+
+    //Use the reduce method to calculate product of all numbers in the array.
+    let product = arr.reduce((res,cur) => {
+        return res * cur;
+    });
+    console.log(product);
+}
