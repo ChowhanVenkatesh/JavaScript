@@ -7,3 +7,13 @@
     background-color: aqua;
     border: 1px solid;
 }
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
